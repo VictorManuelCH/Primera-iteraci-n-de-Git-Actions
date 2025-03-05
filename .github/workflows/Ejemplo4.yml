@@ -4,17 +4,25 @@ name: Flujo4
 on: [push]
 
 jobs:
- prueba1:
-  runs-on: ubuntu-latest
-  steps:
-   - name: Mensaje
-     run: echo "Hola Mundo"
-   - name: Crea Archivo
-     run: touch alumnos.txt
-   - name: Adiciona Alumnos
-     run: |
-       echo "Jose" >> alumnos.txt
-       echo "Juan" >> alumnos.txt
-       echo "Pedro" >> alumnos.txt
-   - name: Muestra Archivo
-     run: cat alumnos.txt
+  prueba1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mensaje
+      run: echo "Hola Mundo"
+    - name: Crea Archivo
+      run: touch alumnos.txt
+    - name: Adiciona Alumnos
+      run: |
+        echo "Jose" >> alumnos.txt
+        echo "Juan" >> alumnos.txt
+        echo "Pedro" >> alumnos.txt
+    - name: Muestra Archivo
+      run: cat alumnos.txt
+      
+  prueba2:
+   runs-on: ubuntu-latest
+   steps:
+   - name: "crea archivo con contenido"
+     run: touch Alumnos.txt
+   - name: "muestra contenido del archivo"
+     run: cat Alumnos.txt
