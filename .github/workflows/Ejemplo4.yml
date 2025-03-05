@@ -1,10 +1,20 @@
+#1 PONERLE UN NOMBRE
 name: Flujo4
-
+#darle un evento para q se ejecute el flujo de trabajo
 on: [push]
 
 jobs:
-  Prueba1:
-   runs-on: ubuntu-latest
-   steps:
-    - name: mensaje
-      run: echo "Primera iteración de Git Actions"
+ prueba1:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Mensaje
+     run: echo "Hola Mundo"
+   - name: Crea Archivo
+     run: touch alumnos.txt
+   - name: Adiciona Alumnos
+     run: |
+       echo "Jose" >> alumnos.txt
+       echo "Juan" >> alumnos.txt
+       echo "Pedro" >> alumnos.txt
+   - name: Muestra Archivo
+     run: cat alumnos.txt
