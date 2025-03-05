@@ -17,4 +17,4 @@ jobs:
        echo "Juan" >> alumnos.txt
        echo "Pedro" >> alumnos.txt
    - name: Muestra Archivo
-     run: cat alumnos.txt
+     run: cat alumnos.txt
