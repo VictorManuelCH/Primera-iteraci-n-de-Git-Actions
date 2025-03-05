@@ -1,0 +1,10 @@
+name: Flujo4
+
+on: [push]
+
+jobs:
+ Prueba1:
+  nums on: ubuntu-latest
+  steps:
+   name: mensaje
+   - run: echo "Primera iteración de Git Actions"
